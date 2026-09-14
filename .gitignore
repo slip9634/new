@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 reports/run_study.log
 reports/equity_curves.parquet
+live/state/
+live/__pycache__/
