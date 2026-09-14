@@ -1,1 +1,2 @@
 {"timestamp": "2026-09-14T03:06:20+00:00", "source": "manual_test_run", "bar_time": "2026-09-14T02:45:00+00:00", "close": 77564.5, "upper_entry": 80277.0, "lower_entry": 76058.0, "upper_exit": 79782.5, "lower_exit": 76058.0, "target_position": 0, "prev_position": 0, "action": "none"}
+{"timestamp": "2026-09-14T03:10:49.626844+00:00", "bar_time": "2026-09-14T02:45:00+00:00", "close": 77564.5, "upper_entry": 80277.0, "lower_entry": 76058.0, "upper_exit": 79782.5, "lower_exit": 76058.0, "target_position": 0, "prev_position": 0, "action": "heartbeat_no_change"}
