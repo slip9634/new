@@ -59,6 +59,17 @@ def ema_crossover(df: pd.DataFrame, fast: int, slow: int, long_short: bool) -> p
     return pd.Series(sig, index=df.index)
 
 
+def ma_crossover(df: pd.DataFrame, fast: int, slow: int, ma_type: str, long_short: bool) -> pd.Series:
+    """Generalized MA crossover: ma_type 'sma' or 'ema'. Long-only or long/short."""
+    if ma_type == "sma":
+        f, s = df["close"].rolling(fast).mean(), df["close"].rolling(slow).mean()
+    else:
+        f, s = ema(df["close"], fast), ema(df["close"], slow)
+    sig = np.where(f > s, 1, -1 if long_short else 0)
+    sig = np.where(f.isna() | s.isna(), 0, sig)
+    return pd.Series(sig, index=df.index)
+
+
 def ema_crossover_adx(df: pd.DataFrame, fast: int, slow: int, adx_period: int, adx_min: float, long_short: bool) -> pd.Series:
     f, s = ema(df["close"], fast), ema(df["close"], slow)
     trend_ok = adx(df, adx_period) > adx_min
