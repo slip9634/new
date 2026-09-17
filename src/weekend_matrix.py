@@ -17,6 +17,7 @@ WEEKLY_DIR = "/home/user/new/data/turnaround_ibkr_weekly"
 WEEKLY_FILES = {
     "SPY": "spy_weekly.json", "FTSE100": "ftse_weekly.json", "DAX30": "dax_weekly.json",
     "Nasdaq100": "ndx_weekly.json", "EURUSD": "eurusd_weekly.json", "GBPUSD": "gbpusd_weekly.json",
+    "HSI": "hsi_weekly.json",
 }
 
 

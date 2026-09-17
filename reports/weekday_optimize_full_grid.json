@@ -1,0 +1,1218 @@
+{
+  "SPY": [
+    {
+      "entry_wd": 0,
+      "exit_wd": 3,
+      "is_sharpe": 0.807447759486124,
+      "is_trades": 345
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 0,
+      "is_sharpe": 0.6321876735861569,
+      "is_trades": 232
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 4,
+      "is_sharpe": 0.5702814920801493,
+      "is_trades": 346
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 1,
+      "is_sharpe": 0.562645374637362,
+      "is_trades": 346
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 2,
+      "is_sharpe": 0.5189713964806865,
+      "is_trades": 349
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 1,
+      "is_sharpe": 0.37107318650191623,
+      "is_trades": 347
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 2,
+      "is_sharpe": 0.3606441364644211,
+      "is_trades": 345
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 3,
+      "is_sharpe": 0.3190279433262191,
+      "is_trades": 240
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 2,
+      "is_sharpe": 0.26570521772972233,
+      "is_trades": 385
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 0,
+      "is_sharpe": 0.2606714474851463,
+      "is_trades": 334
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 3,
+      "is_sharpe": 0.22343847562921434,
+      "is_trades": 375
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 3,
+      "is_sharpe": 0.22252862404911594,
+      "is_trades": 380
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 1,
+      "is_sharpe": 0.16643553044051387,
+      "is_trades": 383
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 0,
+      "is_sharpe": 0.1364888825960799,
+      "is_trades": 362
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 2,
+      "is_sharpe": 0.12141389861593142,
+      "is_trades": 378
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 1,
+      "is_sharpe": 0.08803999533421984,
+      "is_trades": 359
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 3,
+      "is_sharpe": 0.0820524523969739,
+      "is_trades": 358
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 1,
+      "is_sharpe": 0.000684187205067385,
+      "is_trades": 257
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 0,
+      "is_sharpe": -0.07571778233533005,
+      "is_trades": 366
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 0,
+      "is_sharpe": -0.08029716803226958,
+      "is_trades": 349
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 4,
+      "is_sharpe": -0.11454642419443166,
+      "is_trades": 374
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 4,
+      "is_sharpe": -0.1293295239330561,
+      "is_trades": 258
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 4,
+      "is_sharpe": -0.2301627415984753,
+      "is_trades": 345
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 4,
+      "is_sharpe": -0.2323877178764957,
+      "is_trades": 355
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 2,
+      "is_sharpe": -0.27543095602654016,
+      "is_trades": 248
+    }
+  ],
+  "FTSE100": [
+    {
+      "entry_wd": 2,
+      "exit_wd": 2,
+      "is_sharpe": 0.7749740819435395,
+      "is_trades": 104
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 1,
+      "is_sharpe": 0.3271611172121076,
+      "is_trades": 156
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 4,
+      "is_sharpe": 0.2117745831094381,
+      "is_trades": 159
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 4,
+      "is_sharpe": 0.19826690022254298,
+      "is_trades": 96
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 4,
+      "is_sharpe": 0.1543356141063263,
+      "is_trades": 154
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 0,
+      "is_sharpe": 0.14333536030024413,
+      "is_trades": 155
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 1,
+      "is_sharpe": 0.08056720864355188,
+      "is_trades": 137
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 3,
+      "is_sharpe": 0.03628711266564268,
+      "is_trades": 159
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 2,
+      "is_sharpe": -0.013715012665825052,
+      "is_trades": 159
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 2,
+      "is_sharpe": -0.021368170071891117,
+      "is_trades": 152
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 0,
+      "is_sharpe": -0.06673896912739488,
+      "is_trades": 109
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 1,
+      "is_sharpe": -0.09051319491330846,
+      "is_trades": 159
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 3,
+      "is_sharpe": -0.09825789853348627,
+      "is_trades": 137
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 2,
+      "is_sharpe": -0.10124902158871033,
+      "is_trades": 157
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 2,
+      "is_sharpe": -0.12800503134380364,
+      "is_trades": 137
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 1,
+      "is_sharpe": -0.1749572903402139,
+      "is_trades": 106
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 1,
+      "is_sharpe": -0.2597187903806264,
+      "is_trades": 158
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 3,
+      "is_sharpe": -0.2740861564400608,
+      "is_trades": 101
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 0,
+      "is_sharpe": -0.277154088078603,
+      "is_trades": 156
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 0,
+      "is_sharpe": -0.32972235672709327,
+      "is_trades": 148
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 4,
+      "is_sharpe": -0.34156391754726656,
+      "is_trades": 155
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 0,
+      "is_sharpe": -0.34577463777169914,
+      "is_trades": 137
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 4,
+      "is_sharpe": -0.40750707739046155,
+      "is_trades": 150
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 3,
+      "is_sharpe": -0.4444745275829091,
+      "is_trades": 152
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 3,
+      "is_sharpe": -0.45886736206888545,
+      "is_trades": 156
+    }
+  ],
+  "DAX30": [
+    {
+      "entry_wd": 3,
+      "exit_wd": 3,
+      "is_sharpe": 0.6595398829417695,
+      "is_trades": 112
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 2,
+      "is_sharpe": 0.6474515123801436,
+      "is_trades": 159
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 1,
+      "is_sharpe": 0.3922570846475791,
+      "is_trades": 108
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 4,
+      "is_sharpe": 0.36599718512701745,
+      "is_trades": 98
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 1,
+      "is_sharpe": 0.3646517037086447,
+      "is_trades": 159
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 0,
+      "is_sharpe": 0.3582306908734884,
+      "is_trades": 114
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 2,
+      "is_sharpe": 0.3487283519200657,
+      "is_trades": 107
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 0,
+      "is_sharpe": 0.19100715816313202,
+      "is_trades": 144
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 2,
+      "is_sharpe": 0.18969961970460467,
+      "is_trades": 156
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 3,
+      "is_sharpe": 0.17768149456021434,
+      "is_trades": 157
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 1,
+      "is_sharpe": 0.11726850783797146,
+      "is_trades": 154
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 1,
+      "is_sharpe": 0.11085017298093931,
+      "is_trades": 141
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 4,
+      "is_sharpe": 0.0916016399589112,
+      "is_trades": 157
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 0,
+      "is_sharpe": 0.07205344601305332,
+      "is_trades": 152
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 0,
+      "is_sharpe": 0.06475662539944765,
+      "is_trades": 141
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 2,
+      "is_sharpe": 0.031847022167505436,
+      "is_trades": 147
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 2,
+      "is_sharpe": 0.01833720547809656,
+      "is_trades": 141
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 4,
+      "is_sharpe": -0.0257294631424811,
+      "is_trades": 146
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 3,
+      "is_sharpe": -0.07698280830440585,
+      "is_trades": 140
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 1,
+      "is_sharpe": -0.08151203851269191,
+      "is_trades": 156
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 4,
+      "is_sharpe": -0.0865116878608423,
+      "is_trades": 156
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 3,
+      "is_sharpe": -0.15242521618849472,
+      "is_trades": 148
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 0,
+      "is_sharpe": -0.26204450985302596,
+      "is_trades": 151
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 3,
+      "is_sharpe": -0.42242146109140644,
+      "is_trades": 153
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 4,
+      "is_sharpe": -0.45881191383145115,
+      "is_trades": 152
+    }
+  ],
+  "Nasdaq100": [
+    {
+      "entry_wd": 0,
+      "exit_wd": 2,
+      "is_sharpe": 1.2159359511852004,
+      "is_trades": 133
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 0,
+      "is_sharpe": 1.0988416527279499,
+      "is_trades": 97
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 1,
+      "is_sharpe": 1.069688054145201,
+      "is_trades": 134
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 3,
+      "is_sharpe": 0.9218963776251213,
+      "is_trades": 134
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 4,
+      "is_sharpe": 0.895244358616765,
+      "is_trades": 132
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 2,
+      "is_sharpe": 0.855542074230673,
+      "is_trades": 94
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 2,
+      "is_sharpe": 0.6459165788085427,
+      "is_trades": 135
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 2,
+      "is_sharpe": 0.643399475555796,
+      "is_trades": 145
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 3,
+      "is_sharpe": 0.622897715548132,
+      "is_trades": 146
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 4,
+      "is_sharpe": 0.5457893619940182,
+      "is_trades": 100
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 1,
+      "is_sharpe": 0.38076271903477904,
+      "is_trades": 136
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 2,
+      "is_sharpe": 0.36135554575257406,
+      "is_trades": 149
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 1,
+      "is_sharpe": 0.34571663069028574,
+      "is_trades": 146
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 3,
+      "is_sharpe": 0.25920508113950547,
+      "is_trades": 133
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 0,
+      "is_sharpe": 0.2360795452557227,
+      "is_trades": 133
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 1,
+      "is_sharpe": 0.16415299853543724,
+      "is_trades": 150
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 0,
+      "is_sharpe": 0.16177061337193024,
+      "is_trades": 133
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 4,
+      "is_sharpe": 0.1005301087642594,
+      "is_trades": 132
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 3,
+      "is_sharpe": 0.04408107735658905,
+      "is_trades": 103
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 4,
+      "is_sharpe": 0.02051379241420975,
+      "is_trades": 135
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 0,
+      "is_sharpe": 0.01620083662035751,
+      "is_trades": 149
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 1,
+      "is_sharpe": -0.006533918900867612,
+      "is_trades": 98
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 3,
+      "is_sharpe": -0.23504286455043724,
+      "is_trades": 137
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 4,
+      "is_sharpe": -0.27163052880194055,
+      "is_trades": 148
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 0,
+      "is_sharpe": -0.2775922760728054,
+      "is_trades": 145
+    }
+  ],
+  "EURUSD": [
+    {
+      "entry_wd": 4,
+      "exit_wd": 3,
+      "is_sharpe": 0.12847691504766734,
+      "is_trades": 256
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 3,
+      "is_sharpe": 0.07956792353619542,
+      "is_trades": 267
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 2,
+      "is_sharpe": 0.05765497615949767,
+      "is_trades": 257
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 3,
+      "is_sharpe": 0.04342715589905218,
+      "is_trades": 247
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 2,
+      "is_sharpe": -0.008723132772954246,
+      "is_trades": 267
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 4,
+      "is_sharpe": -0.04656243448393078,
+      "is_trades": 174
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 1,
+      "is_sharpe": -0.08631222259075827,
+      "is_trades": 267
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 4,
+      "is_sharpe": -0.14032128692490145,
+      "is_trades": 267
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 3,
+      "is_sharpe": -0.1632382363107894,
+      "is_trades": 250
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 0,
+      "is_sharpe": -0.2190518108047791,
+      "is_trades": 172
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 2,
+      "is_sharpe": -0.3027487176574496,
+      "is_trades": 250
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 1,
+      "is_sharpe": -0.3100064915353517,
+      "is_trades": 257
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 4,
+      "is_sharpe": -0.3140323782049915,
+      "is_trades": 249
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 0,
+      "is_sharpe": -0.37811545642916533,
+      "is_trades": 250
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 1,
+      "is_sharpe": -0.3788935095826782,
+      "is_trades": 163
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 0,
+      "is_sharpe": -0.4290479155408172,
+      "is_trades": 232
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 4,
+      "is_sharpe": -0.4320503945395109,
+      "is_trades": 247
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 1,
+      "is_sharpe": -0.46845792257671515,
+      "is_trades": 232
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 0,
+      "is_sharpe": -0.471080517377704,
+      "is_trades": 257
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 2,
+      "is_sharpe": -0.5559386587141637,
+      "is_trades": 232
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 3,
+      "is_sharpe": -0.5565622338758065,
+      "is_trades": 154
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 0,
+      "is_sharpe": -0.6045843635713584,
+      "is_trades": 247
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 4,
+      "is_sharpe": -0.6218380454181709,
+      "is_trades": 232
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 1,
+      "is_sharpe": -0.67122951591164,
+      "is_trades": 247
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 2,
+      "is_sharpe": -0.6992050991396036,
+      "is_trades": 167
+    }
+  ],
+  "GBPUSD": [
+    {
+      "entry_wd": 0,
+      "exit_wd": 0,
+      "is_sharpe": 0.23099562556736616,
+      "is_trades": 176
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 3,
+      "is_sharpe": 0.1356741907304344,
+      "is_trades": 261
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 3,
+      "is_sharpe": 0.10048194289751868,
+      "is_trades": 253
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 3,
+      "is_sharpe": 0.061361453722644545,
+      "is_trades": 264
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 4,
+      "is_sharpe": -0.009910554497777382,
+      "is_trades": 260
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 2,
+      "is_sharpe": -0.06975297764165886,
+      "is_trades": 253
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 2,
+      "is_sharpe": -0.11132934291878177,
+      "is_trades": 261
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 2,
+      "is_sharpe": -0.11287366446002776,
+      "is_trades": 264
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 2,
+      "is_sharpe": -0.15180593074509138,
+      "is_trades": 159
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 1,
+      "is_sharpe": -0.1976185959719869,
+      "is_trades": 170
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 1,
+      "is_sharpe": -0.2652692002083522,
+      "is_trades": 261
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 4,
+      "is_sharpe": -0.31003650408436745,
+      "is_trades": 252
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 4,
+      "is_sharpe": -0.33106676197664703,
+      "is_trades": 174
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 1,
+      "is_sharpe": -0.4093841065848793,
+      "is_trades": 265
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 0,
+      "is_sharpe": -0.43840191175742926,
+      "is_trades": 253
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 3,
+      "is_sharpe": -0.44438721985177804,
+      "is_trades": 243
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 0,
+      "is_sharpe": -0.5134745414809443,
+      "is_trades": 265
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 0,
+      "is_sharpe": -0.65961916437077,
+      "is_trades": 243
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 4,
+      "is_sharpe": -0.6677971966709194,
+      "is_trades": 242
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 3,
+      "is_sharpe": -0.6801971597107963,
+      "is_trades": 166
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 1,
+      "is_sharpe": -0.710955734002517,
+      "is_trades": 243
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 1,
+      "is_sharpe": -0.7293848866669616,
+      "is_trades": 251
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 2,
+      "is_sharpe": -0.7942339618092225,
+      "is_trades": 250
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 0,
+      "is_sharpe": -0.8429727090301115,
+      "is_trades": 251
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 4,
+      "is_sharpe": -1.0929509719167638,
+      "is_trades": 250
+    }
+  ],
+  "BTCUSD": [
+    {
+      "entry_wd": 4,
+      "exit_wd": 0,
+      "is_sharpe": 0.650693012417849,
+      "is_trades": 147
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 1,
+      "is_sharpe": 0.5392418782600493,
+      "is_trades": 116
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 1,
+      "is_sharpe": 0.5279831898164729,
+      "is_trades": 147
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 2,
+      "is_sharpe": 0.4149012414097785,
+      "is_trades": 146
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 0,
+      "is_sharpe": 0.4108226634832202,
+      "is_trades": 170
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 3,
+      "is_sharpe": 0.4071612586415359,
+      "is_trades": 146
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 1,
+      "is_sharpe": 0.4002374291021627,
+      "is_trades": 169
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 0,
+      "is_sharpe": 0.39471861624406257,
+      "is_trades": 168
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 2,
+      "is_sharpe": 0.3901436911776574,
+      "is_trades": 113
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 1,
+      "is_sharpe": 0.3892267263104484,
+      "is_trades": 170
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 3,
+      "is_sharpe": 0.3133678886907617,
+      "is_trades": 113
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 4,
+      "is_sharpe": 0.3077959020038949,
+      "is_trades": 170
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 2,
+      "is_sharpe": 0.3029739459917379,
+      "is_trades": 169
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 4,
+      "is_sharpe": 0.292088634065904,
+      "is_trades": 169
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 4,
+      "is_sharpe": 0.2732265531870712,
+      "is_trades": 98
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 0,
+      "is_sharpe": 0.2612484171470148,
+      "is_trades": 169
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 2,
+      "is_sharpe": -0.08254996110631176,
+      "is_trades": 168
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 4,
+      "is_sharpe": -0.1059932141139278,
+      "is_trades": 168
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 3,
+      "is_sharpe": -0.23066595068868867,
+      "is_trades": 170
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 1,
+      "is_sharpe": -0.24461297038698593,
+      "is_trades": 167
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 2,
+      "is_sharpe": -0.35765128419565745,
+      "is_trades": 167
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 4,
+      "is_sharpe": -0.36516600433556234,
+      "is_trades": 167
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 3,
+      "is_sharpe": -0.4420044519684835,
+      "is_trades": 168
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 0,
+      "is_sharpe": -0.461668456641646,
+      "is_trades": 106
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 3,
+      "is_sharpe": -0.6028439416796993,
+      "is_trades": 167
+    }
+  ],
+  "HSI": [
+    {
+      "entry_wd": 2,
+      "exit_wd": 2,
+      "is_sharpe": 0.7711854816176761,
+      "is_trades": 43
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 4,
+      "is_sharpe": 0.5692359710902991,
+      "is_trades": 59
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 4,
+      "is_sharpe": 0.5535476442828032,
+      "is_trades": 57
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 0,
+      "is_sharpe": 0.45860805361730356,
+      "is_trades": 59
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 2,
+      "is_sharpe": 0.4542381440261445,
+      "is_trades": 56
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 3,
+      "is_sharpe": 0.39642365622075726,
+      "is_trades": 56
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 1,
+      "is_sharpe": 0.3632803687678952,
+      "is_trades": 57
+    },
+    {
+      "entry_wd": 0,
+      "exit_wd": 0,
+      "is_sharpe": 0.28882391833689874,
+      "is_trades": 38
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 1,
+      "is_sharpe": 0.2508167399746354,
+      "is_trades": 45
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 1,
+      "is_sharpe": 0.23509765813611988,
+      "is_trades": 59
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 4,
+      "is_sharpe": 0.10443972141047732,
+      "is_trades": 65
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 2,
+      "is_sharpe": 0.05446274899320366,
+      "is_trades": 58
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 0,
+      "is_sharpe": -0.03424829225686279,
+      "is_trades": 65
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 1,
+      "is_sharpe": -0.06009775179521322,
+      "is_trades": 62
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 0,
+      "is_sharpe": -0.21082550319552446,
+      "is_trades": 59
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 3,
+      "is_sharpe": -0.2200507081849004,
+      "is_trades": 61
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 1,
+      "is_sharpe": -0.2327934220691209,
+      "is_trades": 67
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 2,
+      "is_sharpe": -0.2582323320703339,
+      "is_trades": 61
+    },
+    {
+      "entry_wd": 4,
+      "exit_wd": 4,
+      "is_sharpe": -0.3258683032929471,
+      "is_trades": 42
+    },
+    {
+      "entry_wd": 2,
+      "exit_wd": 3,
+      "is_sharpe": -0.38824541672786583,
+      "is_trades": 67
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 0,
+      "is_sharpe": -0.4878531494324802,
+      "is_trades": 62
+    },
+    {
+      "entry_wd": 3,
+      "exit_wd": 3,
+      "is_sharpe": -0.7454173140181931,
+      "is_trades": 40
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 4,
+      "is_sharpe": -0.8328628778621736,
+      "is_trades": 64
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 3,
+      "is_sharpe": -0.8656102248509012,
+      "is_trades": 65
+    },
+    {
+      "entry_wd": 1,
+      "exit_wd": 2,
+      "is_sharpe": -0.9649366042843179,
+      "is_trades": 64
+    }
+  ]
+}

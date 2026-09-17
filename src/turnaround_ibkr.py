@@ -21,6 +21,7 @@ INSTRUMENTS = {
     "Nasdaq100": ("ndx_ibkr.json", False),
     "EURUSD": ("eurusd_ibkr.json", True),
     "GBPUSD": ("gbpusd_ibkr.json", True),
+    "HSI": ("hsi_ibkr.json", False),
 }
 
 
