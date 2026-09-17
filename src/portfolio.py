@@ -86,12 +86,11 @@ def turnaround_daily_returns(df_loader, ibs_threshold: float, is_ibkr: bool = Fa
 
 
 def _obs_per_year(daily_returns: pd.Series, r: pd.Series) -> float:
-    """Annualization basis = actual number of non-zero return observations
-    per year, NOT calendar days -- these are sparse trade-event series
-    (BTC's is genuinely daily; the equity sleeves only carry a nonzero
-    return on each trade's exit day), so sqrt(365) would overstate Sharpe
-    for anything traded less than daily. Same convention trade_metrics()
-    uses elsewhere in this repo (trades_per_year = n_trades/years)."""
+    """Trade-event annualization: for reporting ONE strategy's own Sharpe
+    (a homogeneous series of discrete trade outcomes), the standard
+    practitioner convention is sqrt(trades/year) -- same as trade_metrics()
+    elsewhere in this repo. Used here only for per-sleeve stats and vol
+    weighting, NOT for the combined portfolio Sharpe (see sharpe_of_nav)."""
     years = (daily_returns.index.max() - daily_returns.index.min()).days / 365.25
     return len(r) / years if years > 0 else np.nan
 
@@ -104,11 +103,29 @@ def ann_vol(daily_returns: pd.Series) -> float:
 
 
 def sharpe_of(daily_returns: pd.Series) -> float:
+    """Per-sleeve Sharpe, trade-event basis -- consistent with how every
+    other strategy-level Sharpe in this repo is reported."""
     r = daily_returns[daily_returns != 0]
     if len(r) < 5:
         return np.nan
     n_per_year = _obs_per_year(daily_returns, r)
     return (r.mean() / r.std()) * np.sqrt(n_per_year) if r.std() > 0 else np.nan
+
+
+def sharpe_of_nav(daily_returns: pd.Series) -> float:
+    """Portfolio-level Sharpe, standard daily-NAV basis: EVERY calendar day
+    counts (including flat days where nothing traded), annualized by
+    sqrt(252). This is the right basis for a combined dollar portfolio --
+    unlike a single homogeneous strategy, a multi-sleeve book's flat days
+    are real, informative low-variance observations (the capital genuinely
+    didn't move that day), not missing data to be excluded. Using the
+    trade-event basis here (as if sparse events were the only observations)
+    overstates Sharpe by ignoring how much smoother the combined NAV
+    actually is day to day."""
+    r = daily_returns.dropna()
+    if len(r) < 5 or r.std() == 0:
+        return np.nan
+    return (r.mean() / r.std()) * np.sqrt(252)
 
 
 def max_dd_of(equity: pd.Series) -> float:
@@ -161,7 +178,8 @@ if __name__ == "__main__":
     portfolio_equity = sum(sleeve_equity.values())
     portfolio_returns = portfolio_equity.pct_change().fillna(0)
 
-    port_sharpe = sharpe_of(portfolio_returns.replace(0, np.nan).dropna().reindex(portfolio_returns.index, fill_value=0))
+    port_sharpe_nav = sharpe_of_nav(portfolio_returns)
+    port_sharpe_event = sharpe_of(portfolio_returns.replace(0, np.nan).dropna().reindex(portfolio_returns.index, fill_value=0))
     years = (common.index.max() - common.index.min()).days / 365.25
     total_return = portfolio_equity.iloc[-1] / TOTAL_CAPITAL - 1
     cagr = (1 + total_return) ** (1 / years) - 1
@@ -170,7 +188,8 @@ if __name__ == "__main__":
     print(f"\n=== Combined portfolio, {COMMON_START} -> {COMMON_END} ({years:.1f}yr), ${TOTAL_CAPITAL:,} ===")
     print(f"Final value: ${portfolio_equity.iloc[-1]:,.0f}  (total return {total_return*100:.1f}%, CAGR {cagr*100:.1f}%)")
     print(f"Max drawdown: {max_dd*100:.1f}%")
-    print(f"Portfolio Sharpe (trade-day basis): {port_sharpe:.2f}" if not np.isnan(port_sharpe) else "Portfolio Sharpe: n/a")
+    print(f"Portfolio Sharpe, daily-NAV basis (correct for a combined portfolio): {port_sharpe_nav:.2f}")
+    print(f"Portfolio Sharpe, trade-event basis (overstates it -- shown for comparison only): {port_sharpe_event:.2f}")
 
     for name in sleeves:
         final = sleeve_equity[name].iloc[-1]
@@ -188,6 +207,7 @@ if __name__ == "__main__":
                 "common_window_return_pct": round(float(sleeve_equity[name].iloc[-1] / dollar_alloc[name] - 1) * 100, 2),
                 "actual_data_start": sleeves[name][sleeves[name] != 0].index.min().date().isoformat() if (sleeves[name] != 0).any() else None,
                 "actual_data_end": sleeves[name].dropna().index.max().date().isoformat(),
+                "sharpe_event_basis": round(float(sharpe_of(sleeves[name])), 2) if not np.isnan(sharpe_of(sleeves[name])) else None,
             } for name in sleeves
         },
         "correlation_matrix": corr.round(3).to_dict(),
@@ -196,7 +216,8 @@ if __name__ == "__main__":
             "total_return_pct": round(float(total_return) * 100, 2),
             "cagr_pct": round(float(cagr) * 100, 2),
             "max_dd_pct": round(float(max_dd) * 100, 2),
-            "sharpe": round(float(port_sharpe), 2) if not np.isnan(port_sharpe) else None,
+            "sharpe_nav_basis": round(float(port_sharpe_nav), 2) if not np.isnan(port_sharpe_nav) else None,
+            "sharpe_event_basis": round(float(port_sharpe_event), 2) if not np.isnan(port_sharpe_event) else None,
         },
         "equity_curve": {
             "dates": [d.date().isoformat() for d in portfolio_equity.index],

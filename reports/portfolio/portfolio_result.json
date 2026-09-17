@@ -12,7 +12,8 @@
       "common_window_final_value": 240409.57,
       "common_window_return_pct": 154.85,
       "actual_data_start": "2014-03-03",
-      "actual_data_end": "2025-01-07"
+      "actual_data_end": "2025-01-07",
+      "sharpe_event_basis": 1.59
     },
     "SPY (Monday->Wed)": {
       "ann_vol_full_history": 0.0528,
@@ -21,7 +22,8 @@
       "common_window_final_value": 327025.34,
       "common_window_return_pct": 8.87,
       "actual_data_start": "2000-01-26",
-      "actual_data_end": "2026-03-20"
+      "actual_data_end": "2026-03-20",
+      "sharpe_event_basis": 0.73
     },
     "Nasdaq100 (Monday->Wed)": {
       "ann_vol_full_history": 0.0423,
@@ -30,7 +32,8 @@
       "common_window_final_value": 414491.4,
       "common_window_return_pct": 10.55,
       "actual_data_start": "2013-09-18",
-      "actual_data_end": "2023-09-11"
+      "actual_data_end": "2023-09-11",
+      "sharpe_event_basis": 1.0
     },
     "HSI (Monday->Wed)": {
       "ann_vol_full_history": 0.0688,
@@ -39,7 +42,8 @@
       "common_window_final_value": 292017.88,
       "common_window_return_pct": 26.77,
       "actual_data_start": "2022-10-12",
-      "actual_data_end": "2026-09-17"
+      "actual_data_end": "2026-09-17",
+      "sharpe_event_basis": 0.89
     }
   },
   "correlation_matrix": {
@@ -73,7 +77,8 @@
     "total_return_pct": 27.39,
     "cagr_pct": 6.26,
     "max_dd_pct": -4.13,
-    "sharpe": 1.53
+    "sharpe_nav_basis": 0.92,
+    "sharpe_event_basis": 1.53
   },
   "equity_curve": {
     "dates": [
