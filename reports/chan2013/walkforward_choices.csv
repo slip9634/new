@@ -1,0 +1,179 @@
+family,year,picked,trailing_sharpe
+TSMOM (FX+SPY+energy),1996,lb=21 sig=cont reb=M vol=63 | lb=21 sig=cont reb=M vol=21 | lb=21 sig=sign reb=M vol=21,1.01 | 1.01 | 1.00
+TSMOM (FX+SPY+energy),1997,lb=21 sig=sign reb=M vol=21 | lb=21 sig=cont reb=M vol=21 | lb=21 sig=cont reb=M vol=63,0.89 | 0.89 | 0.87
+TSMOM (FX+SPY+energy),1998,lb=21 sig=cont reb=M vol=21 | lb=21 sig=cont reb=M vol=63 | lb=21 sig=sign reb=M vol=21,0.91 | 0.89 | 0.88
+TSMOM (FX+SPY+energy),1999,lb=21 sig=cont reb=M vol=21 | lb=21 sig=sign reb=M vol=63 | lb=21 sig=sign reb=M vol=21,0.77 | 0.75 | 0.75
+TSMOM (FX+SPY+energy),2000,lb=21 sig=cont reb=M vol=21 | lb=21 sig=cont reb=M vol=63 | lb=21 sig=sign reb=M vol=63,0.67 | 0.64 | 0.64
+TSMOM (FX+SPY+energy),2001,lb=63 sig=cont reb=M vol=63 | lb=21 sig=sign reb=M vol=63 | lb=21 sig=cont reb=M vol=21,0.59 | 0.57 | 0.57
+TSMOM (FX+SPY+energy),2002,lb=21 sig=cont reb=M vol=21 | lb=21 sig=sign reb=M vol=63 | lb=21 sig=cont reb=M vol=63,0.53 | 0.50 | 0.47
+TSMOM (FX+SPY+energy),2003,lb=21 sig=cont reb=M vol=21 | lb=21 sig=sign reb=M vol=63 | lb=21 sig=cont reb=M vol=63,0.60 | 0.57 | 0.55
+TSMOM (FX+SPY+energy),2004,lb=252 sig=cont reb=M vol=63 | lb=252 sig=cont reb=W vol=63 | lb=252 sig=cont reb=W vol=21,0.69 | 0.67 | 0.66
+TSMOM (FX+SPY+energy),2005,lb=252 sig=cont reb=M vol=63 | lb=252 sig=cont reb=M vol=21 | lb=252 sig=cont reb=W vol=21,0.69 | 0.65 | 0.64
+TSMOM (FX+SPY+energy),2006,lb=252 sig=cont reb=M vol=63 | lb=252 sig=cont reb=M vol=21 | lb=252 sig=sign reb=M vol=63,0.59 | 0.55 | 0.54
+TSMOM (FX+SPY+energy),2007,lb=252 sig=cont reb=M vol=63 | lb=21 sig=cont reb=M vol=21 | lb=252 sig=cont reb=M vol=21,0.52 | 0.51 | 0.50
+TSMOM (FX+SPY+energy),2008,lb=252 sig=cont reb=M vol=63 | lb=252 sig=sign reb=M vol=63 | lb=252 sig=cont reb=M vol=21,0.55 | 0.53 | 0.53
+TSMOM (FX+SPY+energy),2009,"lb=21 sig=cont reb=M vol=21 | lb=21 sig=cont reb=M vol=63 | lb=(21, 63, 126, 252) sig=cont reb=M vol=21",0.58 | 0.55 | 0.55
+TSMOM (FX+SPY+energy),2010,lb=21 sig=cont reb=M vol=21 | lb=63 sig=cont reb=M vol=63 | lb=21 sig=cont reb=M vol=63,0.54 | 0.54 | 0.52
+TSMOM (FX+SPY+energy),2011,"lb=63 sig=cont reb=M vol=63 | lb=63 sig=cont reb=M vol=21 | lb=(21, 63, 126, 252) sig=cont reb=M vol=63",0.51 | 0.48 | 0.45
+TSMOM (FX+SPY+energy),2012,"lb=63 sig=cont reb=M vol=63 | lb=63 sig=cont reb=M vol=21 | lb=(21, 63, 126, 252) sig=cont reb=M vol=21",0.49 | 0.48 | 0.44
+TSMOM (FX+SPY+energy),2013,"lb=63 sig=cont reb=M vol=63 | lb=63 sig=cont reb=M vol=21 | lb=(21, 63, 126, 252) sig=cont reb=M vol=21",0.41 | 0.40 | 0.39
+TSMOM (FX+SPY+energy),2014,"lb=63 sig=cont reb=M vol=63 | lb=(21, 63, 126, 252) sig=cont reb=M vol=21 | lb=63 sig=cont reb=M vol=21",0.41 | 0.39 | 0.39
+TSMOM (FX+SPY+energy),2015,"lb=63 sig=cont reb=M vol=63 | lb=63 sig=cont reb=M vol=21 | lb=(21, 63, 126, 252) sig=cont reb=M vol=21",0.46 | 0.44 | 0.43
+TSMOM (FX+SPY+energy),2016,"lb=(21, 63, 126, 252) sig=cont reb=M vol=21 | lb=63 sig=cont reb=M vol=63 | lb=(63, 126, 252) sig=cont reb=M vol=21",0.44 | 0.43 | 0.42
+TSMOM (FX+SPY+energy),2017,"lb=(21, 63, 126, 252) sig=cont reb=M vol=21 | lb=(63, 126, 252) sig=cont reb=M vol=21 | lb=(21, 63, 126, 252) sig=cont reb=M vol=63",0.42 | 0.41 | 0.41
+TSMOM (FX+SPY+energy),2018,"lb=(21, 63, 126, 252) sig=cont reb=M vol=21 | lb=(21, 63, 126, 252) sig=cont reb=M vol=63 | lb=(63, 126, 252) sig=cont reb=M vol=21",0.39 | 0.38 | 0.37
+TSMOM (FX+SPY+energy),2019,"lb=(21, 63, 126, 252) sig=cont reb=M vol=21 | lb=(21, 63, 126, 252) sig=cont reb=M vol=63 | lb=(21, 63, 126, 252) sig=sign reb=M vol=21",0.38 | 0.37 | 0.37
+TSMOM (FX+SPY+energy),2020,"lb=(21, 63, 126, 252) sig=cont reb=M vol=21 | lb=(63, 126, 252) sig=cont reb=M vol=21 | lb=(21, 63, 126, 252) sig=sign reb=M vol=21",0.34 | 0.33 | 0.32
+TSMOM (FX+SPY+energy),2021,"lb=(21, 63, 126, 252) sig=cont reb=M vol=21 | lb=(63, 126, 252) sig=cont reb=M vol=21 | lb=(21, 63, 126, 252) sig=cont reb=M vol=63",0.35 | 0.34 | 0.33
+TSMOM (FX+SPY+energy),2022,"lb=(21, 63, 126, 252) sig=cont reb=M vol=21 | lb=(63, 126, 252) sig=cont reb=M vol=21 | lb=(63, 126, 252) sig=cont reb=M vol=63",0.34 | 0.34 | 0.32
+TSMOM (FX+SPY+energy),2023,"lb=(21, 63, 126, 252) sig=cont reb=M vol=21 | lb=(63, 126, 252) sig=cont reb=M vol=21 | lb=(63, 126, 252) sig=cont reb=M vol=63",0.35 | 0.35 | 0.32
+TSMOM (FX+SPY+energy),2024,"lb=(21, 63, 126, 252) sig=cont reb=M vol=21 | lb=(63, 126, 252) sig=cont reb=M vol=21 | lb=252 sig=cont reb=W vol=63",0.32 | 0.32 | 0.29
+TSMOM (FX+SPY+energy),2025,"lb=(21, 63, 126, 252) sig=cont reb=M vol=21 | lb=252 sig=cont reb=W vol=63 | lb=(63, 126, 252) sig=cont reb=M vol=21",0.28 | 0.28 | 0.28
+TSMOM (FX+SPY+energy),2026,"lb=(21, 63, 126, 252) sig=cont reb=M vol=21 | lb=252 sig=cont reb=W vol=63 | lb=(63, 126, 252) sig=cont reb=M vol=21",0.27 | 0.27 | 0.26
+XS reversal G10 FX,1996,horizon=126 smooth=10 | horizon=126 smooth=5 | horizon=126 smooth=2,0.01 | -0.11 | -0.18
+XS reversal G10 FX,1997,horizon=126 smooth=10 | horizon=126 smooth=5 | horizon=3 smooth=2,-0.16 | -0.25 | -0.31
+XS reversal G10 FX,1998,horizon=3 smooth=2 | horizon=126 smooth=10 | horizon=3 smooth=1,-0.16 | -0.16 | -0.17
+XS reversal G10 FX,1999,horizon=3 smooth=2 | horizon=3 smooth=1 | horizon=2 smooth=2,-0.11 | -0.14 | -0.18
+XS reversal G10 FX,2000,horizon=3 smooth=2 | horizon=3 smooth=1 | horizon=5 smooth=2,-0.01 | -0.08 | -0.11
+XS reversal G10 FX,2001,horizon=3 smooth=2 | horizon=5 smooth=2 | horizon=3 smooth=1,0.07 | 0.01 | -0.01
+XS reversal G10 FX,2002,horizon=3 smooth=2 | horizon=5 smooth=2 | horizon=3 smooth=1,0.06 | 0.01 | -0.01
+XS reversal G10 FX,2003,horizon=3 smooth=2 | horizon=5 smooth=2 | horizon=3 smooth=1,0.12 | 0.08 | 0.05
+XS reversal G10 FX,2004,horizon=3 smooth=2 | horizon=5 smooth=2 | horizon=3 smooth=1,0.11 | 0.08 | 0.03
+XS reversal G10 FX,2005,horizon=3 smooth=2 | horizon=3 smooth=1 | horizon=2 smooth=2,0.20 | 0.16 | 0.10
+XS reversal G10 FX,2006,horizon=3 smooth=2 | horizon=3 smooth=1 | horizon=3 smooth=5,0.12 | 0.08 | 0.07
+XS reversal G10 FX,2007,horizon=3 smooth=2 | horizon=3 smooth=1 | horizon=3 smooth=5,0.14 | 0.09 | 0.07
+XS reversal G10 FX,2008,horizon=3 smooth=2 | horizon=3 smooth=5 | horizon=126 smooth=10,0.11 | 0.08 | 0.05
+XS reversal G10 FX,2009,horizon=3 smooth=2 | horizon=3 smooth=5 | horizon=5 smooth=2,0.10 | 0.06 | 0.05
+XS reversal G10 FX,2010,horizon=5 smooth=2 | horizon=3 smooth=2 | horizon=5 smooth=5,0.14 | 0.14 | 0.13
+XS reversal G10 FX,2011,horizon=5 smooth=2 | horizon=3 smooth=2 | horizon=3 smooth=5,0.16 | 0.16 | 0.15
+XS reversal G10 FX,2012,horizon=5 smooth=5 | horizon=3 smooth=5 | horizon=5 smooth=2,0.22 | 0.21 | 0.20
+XS reversal G10 FX,2013,horizon=5 smooth=2 | horizon=5 smooth=5 | horizon=3 smooth=5,0.19 | 0.18 | 0.18
+XS reversal G10 FX,2014,horizon=5 smooth=2 | horizon=5 smooth=5 | horizon=3 smooth=5,0.20 | 0.19 | 0.18
+XS reversal G10 FX,2015,horizon=5 smooth=5 | horizon=5 smooth=2 | horizon=3 smooth=5,0.18 | 0.17 | 0.16
+XS reversal G10 FX,2016,horizon=5 smooth=5 | horizon=3 smooth=5 | horizon=5 smooth=2,0.18 | 0.17 | 0.17
+XS reversal G10 FX,2017,horizon=5 smooth=5 | horizon=3 smooth=5 | horizon=5 smooth=10,0.21 | 0.19 | 0.18
+XS reversal G10 FX,2018,horizon=5 smooth=5 | horizon=5 smooth=10 | horizon=3 smooth=5,0.21 | 0.20 | 0.20
+XS reversal G10 FX,2019,horizon=5 smooth=5 | horizon=5 smooth=10 | horizon=3 smooth=5,0.20 | 0.20 | 0.18
+XS reversal G10 FX,2020,horizon=5 smooth=5 | horizon=5 smooth=10 | horizon=3 smooth=5,0.22 | 0.21 | 0.20
+XS reversal G10 FX,2021,horizon=5 smooth=10 | horizon=5 smooth=5 | horizon=3 smooth=5,0.22 | 0.22 | 0.19
+XS reversal G10 FX,2022,horizon=5 smooth=10 | horizon=5 smooth=5 | horizon=3 smooth=5,0.21 | 0.21 | 0.19
+XS reversal G10 FX,2023,horizon=5 smooth=10 | horizon=5 smooth=5 | horizon=3 smooth=10,0.22 | 0.22 | 0.21
+XS reversal G10 FX,2024,horizon=5 smooth=10 | horizon=5 smooth=5 | horizon=3 smooth=10,0.23 | 0.23 | 0.22
+XS reversal G10 FX,2025,horizon=5 smooth=10 | horizon=5 smooth=5 | horizon=3 smooth=10,0.25 | 0.23 | 0.22
+XS reversal G10 FX,2026,horizon=5 smooth=10 | horizon=5 smooth=5 | horizon=3 smooth=10,0.26 | 0.25 | 0.24
+XS momentum G10 FX,1996,lb=21 n=3 skip=0 | lb=21 n=2 skip=5 | lb=21 n=3 skip=5,0.91 | 0.88 | 0.75
+XS momentum G10 FX,1997,lb=21 n=3 skip=0 | lb=21 n=2 skip=5 | lb=21 n=3 skip=5,0.85 | 0.79 | 0.69
+XS momentum G10 FX,1998,lb=21 n=2 skip=5 | lb=21 n=3 skip=0 | lb=21 n=3 skip=5,0.79 | 0.76 | 0.64
+XS momentum G10 FX,1999,lb=21 n=2 skip=5 | lb=21 n=3 skip=0 | lb=63 n=2 skip=0,0.51 | 0.50 | 0.43
+XS momentum G10 FX,2000,lb=21 n=2 skip=5 | lb=21 n=3 skip=0 | lb=63 n=2 skip=0,0.50 | 0.48 | 0.47
+XS momentum G10 FX,2001,lb=21 n=2 skip=5 | lb=21 n=3 skip=0 | lb=63 n=2 skip=0,0.47 | 0.39 | 0.39
+XS momentum G10 FX,2002,lb=21 n=2 skip=5 | lb=21 n=3 skip=0 | lb=63 n=2 skip=0,0.43 | 0.37 | 0.29
+XS momentum G10 FX,2003,lb=21 n=2 skip=5 | lb=63 n=2 skip=0 | lb=21 n=3 skip=0,0.40 | 0.36 | 0.29
+XS momentum G10 FX,2004,lb=21 n=2 skip=5 | lb=63 n=2 skip=0 | lb=21 n=3 skip=0,0.32 | 0.27 | 0.19
+XS momentum G10 FX,2005,lb=21 n=2 skip=5 | lb=63 n=2 skip=0 | lb=21 n=3 skip=0,0.30 | 0.23 | 0.16
+XS momentum G10 FX,2006,lb=21 n=2 skip=5 | lb=63 n=2 skip=0 | lb=252 n=2 skip=21,0.25 | 0.20 | 0.09
+XS momentum G10 FX,2007,lb=21 n=2 skip=5 | lb=63 n=2 skip=0 | lb=63 n=3 skip=5,0.24 | 0.22 | 0.11
+XS momentum G10 FX,2008,lb=21 n=2 skip=5 | lb=63 n=2 skip=0 | lb=21 n=3 skip=0,0.17 | 0.14 | 0.08
+XS momentum G10 FX,2009,lb=21 n=2 skip=5 | lb=63 n=2 skip=0 | lb=21 n=3 skip=0,0.26 | 0.23 | 0.15
+XS momentum G10 FX,2010,lb=63 n=2 skip=0 | lb=21 n=2 skip=5 | lb=63 n=2 skip=21,0.20 | 0.16 | 0.15
+XS momentum G10 FX,2011,lb=63 n=2 skip=0 | lb=63 n=2 skip=21 | lb=63 n=3 skip=21,0.20 | 0.18 | 0.10
+XS momentum G10 FX,2012,lb=63 n=2 skip=0 | lb=63 n=2 skip=21 | lb=63 n=3 skip=21,0.18 | 0.17 | 0.11
+XS momentum G10 FX,2013,lb=63 n=2 skip=0 | lb=21 n=2 skip=5 | lb=63 n=2 skip=21,0.13 | 0.13 | 0.09
+XS momentum G10 FX,2014,lb=63 n=2 skip=0 | lb=21 n=2 skip=5 | lb=63 n=2 skip=21,0.14 | 0.13 | 0.08
+XS momentum G10 FX,2015,lb=21 n=2 skip=5 | lb=63 n=2 skip=0 | lb=63 n=2 skip=21,0.13 | 0.13 | 0.07
+XS momentum G10 FX,2016,lb=21 n=2 skip=5 | lb=63 n=2 skip=0 | lb=63 n=2 skip=21,0.14 | 0.12 | 0.06
+XS momentum G10 FX,2017,lb=21 n=2 skip=5 | lb=63 n=2 skip=0 | lb=63 n=2 skip=21,0.14 | 0.07 | 0.04
+XS momentum G10 FX,2018,lb=21 n=2 skip=5 | lb=63 n=2 skip=0 | lb=21 n=3 skip=0,0.11 | 0.05 | 0.03
+XS momentum G10 FX,2019,lb=21 n=2 skip=5 | lb=252 n=2 skip=21 | lb=63 n=2 skip=0,0.05 | 0.01 | 0.00
+XS momentum G10 FX,2020,lb=21 n=2 skip=5 | lb=252 n=2 skip=21 | lb=63 n=2 skip=0,0.05 | 0.01 | 0.00
+XS momentum G10 FX,2021,lb=252 n=2 skip=21 | lb=21 n=2 skip=5 | lb=21 n=3 skip=0,0.01 | 0.00 | -0.01
+XS momentum G10 FX,2022,lb=21 n=2 skip=5 | lb=21 n=3 skip=0 | lb=252 n=2 skip=21,-0.01 | -0.02 | -0.02
+XS momentum G10 FX,2023,lb=252 n=2 skip=21 | lb=21 n=3 skip=0 | lb=21 n=2 skip=5,-0.00 | -0.01 | -0.03
+XS momentum G10 FX,2024,lb=252 n=2 skip=21 | lb=21 n=3 skip=0 | lb=63 n=2 skip=0,0.00 | -0.04 | -0.05
+XS momentum G10 FX,2025,lb=252 n=2 skip=21 | lb=21 n=3 skip=0 | lb=21 n=2 skip=5,0.02 | -0.06 | -0.07
+XS momentum G10 FX,2026,lb=252 n=2 skip=21 | lb=63 n=2 skip=21 | lb=63 n=2 skip=0,0.03 | -0.04 | -0.05
+"Kalman pairs book, all 36 G10 FX pairs",1996,entry=1.5 exit=0.0 | entry=2.0 exit=0.0 | entry=2.5 exit=0.5,-0.38 | -0.47 | -0.61
+"Kalman pairs book, all 36 G10 FX pairs",1997,entry=1.5 exit=0.0 | entry=2.0 exit=0.0 | entry=2.5 exit=0.5,-0.28 | -0.35 | -0.54
+"Kalman pairs book, all 36 G10 FX pairs",1998,entry=1.5 exit=0.0 | entry=2.0 exit=0.0 | entry=2.5 exit=0.5,-0.12 | -0.16 | -0.47
+"Kalman pairs book, all 36 G10 FX pairs",1999,entry=1.5 exit=0.0 | entry=2.0 exit=0.0 | entry=2.5 exit=0.5,-0.07 | -0.07 | -0.31
+"Kalman pairs book, all 36 G10 FX pairs",2000,entry=1.5 exit=0.0 | entry=2.0 exit=0.0 | entry=2.5 exit=0.5,-0.05 | -0.06 | -0.30
+"Kalman pairs book, all 36 G10 FX pairs",2001,entry=2.0 exit=0.0 | entry=1.5 exit=0.0 | entry=2.5 exit=0.5,0.00 | -0.04 | -0.19
+"Kalman pairs book, all 36 G10 FX pairs",2002,entry=2.0 exit=0.0 | entry=1.5 exit=0.0 | entry=2.5 exit=0.5,0.01 | -0.02 | -0.20
+"Kalman pairs book, all 36 G10 FX pairs",2003,entry=2.0 exit=0.0 | entry=1.5 exit=0.0 | entry=2.5 exit=0.5,0.03 | 0.01 | -0.18
+"Kalman pairs book, all 36 G10 FX pairs",2004,entry=1.5 exit=0.0 | entry=2.0 exit=0.0 | entry=2.5 exit=0.5,0.05 | 0.04 | -0.15
+"Kalman pairs book, all 36 G10 FX pairs",2005,entry=2.0 exit=0.0 | entry=1.5 exit=0.0 | entry=2.5 exit=0.5,0.07 | 0.01 | -0.10
+"Kalman pairs book, all 36 G10 FX pairs",2006,entry=2.0 exit=0.0 | entry=1.5 exit=0.0 | entry=2.5 exit=0.5,0.03 | -0.06 | -0.12
+"Kalman pairs book, all 36 G10 FX pairs",2007,entry=2.0 exit=0.0 | entry=1.5 exit=0.0 | entry=2.5 exit=0.5,0.02 | -0.05 | -0.10
+"Kalman pairs book, all 36 G10 FX pairs",2008,entry=2.0 exit=0.0 | entry=2.5 exit=0.5 | entry=1.5 exit=0.0,-0.12 | -0.16 | -0.17
+"Kalman pairs book, all 36 G10 FX pairs",2009,entry=2.5 exit=0.5 | entry=2.0 exit=0.0 | entry=1.5 exit=0.0,-0.04 | -0.15 | -0.22
+"Kalman pairs book, all 36 G10 FX pairs",2010,entry=2.5 exit=0.5 | entry=2.0 exit=0.0 | entry=1.5 exit=0.0,-0.04 | -0.11 | -0.15
+"Kalman pairs book, all 36 G10 FX pairs",2011,entry=2.5 exit=0.5 | entry=2.0 exit=0.0 | entry=1.5 exit=0.0,-0.03 | -0.11 | -0.14
+"Kalman pairs book, all 36 G10 FX pairs",2012,entry=2.5 exit=0.5 | entry=2.0 exit=0.0 | entry=1.5 exit=0.0,-0.08 | -0.15 | -0.19
+"Kalman pairs book, all 36 G10 FX pairs",2013,entry=2.5 exit=0.5 | entry=2.0 exit=0.0 | entry=1.5 exit=0.0,-0.07 | -0.13 | -0.16
+"Kalman pairs book, all 36 G10 FX pairs",2014,entry=2.5 exit=0.5 | entry=2.0 exit=0.0 | entry=1.5 exit=0.0,-0.10 | -0.16 | -0.18
+"Kalman pairs book, all 36 G10 FX pairs",2015,entry=2.5 exit=0.5 | entry=2.0 exit=0.0 | entry=1.5 exit=0.0,-0.09 | -0.15 | -0.17
+"Kalman pairs book, all 36 G10 FX pairs",2016,entry=2.5 exit=0.5 | entry=2.0 exit=0.0 | entry=1.5 exit=0.0,-0.08 | -0.12 | -0.15
+"Kalman pairs book, all 36 G10 FX pairs",2017,entry=2.5 exit=0.5 | entry=2.0 exit=0.0 | entry=1.5 exit=0.0,-0.08 | -0.11 | -0.14
+"Kalman pairs book, all 36 G10 FX pairs",2018,entry=2.5 exit=0.5 | entry=2.0 exit=0.0 | entry=1.5 exit=0.0,-0.09 | -0.13 | -0.15
+"Kalman pairs book, all 36 G10 FX pairs",2019,entry=2.5 exit=0.5 | entry=2.0 exit=0.0 | entry=1.5 exit=0.0,-0.08 | -0.12 | -0.15
+"Kalman pairs book, all 36 G10 FX pairs",2020,entry=2.5 exit=0.5 | entry=2.0 exit=0.0 | entry=1.5 exit=0.0,-0.08 | -0.12 | -0.16
+"Kalman pairs book, all 36 G10 FX pairs",2021,entry=2.5 exit=0.5 | entry=2.0 exit=0.0 | entry=1.5 exit=0.0,-0.09 | -0.12 | -0.17
+"Kalman pairs book, all 36 G10 FX pairs",2022,entry=2.5 exit=0.5 | entry=2.0 exit=0.0 | entry=1.5 exit=0.0,-0.09 | -0.11 | -0.15
+"Kalman pairs book, all 36 G10 FX pairs",2023,entry=2.5 exit=0.5 | entry=2.0 exit=0.0 | entry=1.5 exit=0.0,-0.07 | -0.09 | -0.13
+"Kalman pairs book, all 36 G10 FX pairs",2024,entry=2.5 exit=0.5 | entry=2.0 exit=0.0 | entry=1.5 exit=0.0,-0.08 | -0.08 | -0.12
+"Kalman pairs book, all 36 G10 FX pairs",2025,entry=2.5 exit=0.5 | entry=2.0 exit=0.0 | entry=1.5 exit=0.0,-0.08 | -0.09 | -0.11
+"Kalman pairs book, all 36 G10 FX pairs",2026,entry=2.5 exit=0.5 | entry=2.0 exit=0.0 | entry=1.5 exit=0.0,-0.10 | -0.11 | -0.12
+AUD/CAD pair (Kalman + Johansen variants),1996,johansen z_lb=60 | johansen z_lb=10 | kalman entry=2.0 exit=0.0,-0.04 | -0.15 | -0.25
+AUD/CAD pair (Kalman + Johansen variants),1997,johansen z_lb=60 | kalman entry=2.0 exit=0.0 | johansen z_lb=10,-0.02 | -0.08 | -0.11
+AUD/CAD pair (Kalman + Johansen variants),1998,kalman entry=2.0 exit=0.0 | johansen z_lb=60 | johansen z_lb=10,0.37 | 0.02 | -0.08
+AUD/CAD pair (Kalman + Johansen variants),1999,kalman entry=2.5 exit=0.5 | kalman entry=2.0 exit=0.0 | kalman entry=1.5 exit=0.5,0.38 | 0.19 | 0.10
+AUD/CAD pair (Kalman + Johansen variants),2000,kalman entry=2.5 exit=0.5 | kalman entry=2.0 exit=0.0 | johansen z_lb=60,0.36 | 0.18 | 0.12
+AUD/CAD pair (Kalman + Johansen variants),2001,kalman entry=2.5 exit=0.5 | kalman entry=2.0 exit=0.0 | johansen z_lb=60,0.37 | 0.24 | 0.19
+AUD/CAD pair (Kalman + Johansen variants),2002,johansen z_lb=60 | kalman entry=2.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.37 | 0.27 | 0.24
+AUD/CAD pair (Kalman + Johansen variants),2003,kalman entry=2.0 exit=0.0 | johansen z_lb=60 | kalman entry=2.5 exit=0.5,0.28 | 0.26 | 0.23
+AUD/CAD pair (Kalman + Johansen variants),2004,johansen z_lb=60 | kalman entry=2.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.29 | 0.26 | 0.22
+AUD/CAD pair (Kalman + Johansen variants),2005,kalman entry=2.0 exit=0.0 | kalman entry=1.0 exit=0.0 | johansen z_lb=60,0.22 | 0.13 | 0.09
+AUD/CAD pair (Kalman + Johansen variants),2006,kalman entry=2.0 exit=0.0 | johansen z_lb=60 | kalman entry=1.0 exit=0.0,0.19 | 0.10 | 0.02
+AUD/CAD pair (Kalman + Johansen variants),2007,kalman entry=2.0 exit=0.0 | johansen z_lb=60 | kalman entry=1.0 exit=0.0,0.21 | 0.10 | 0.03
+AUD/CAD pair (Kalman + Johansen variants),2008,kalman entry=2.0 exit=0.0 | johansen z_lb=60 | kalman entry=1.0 exit=0.0,0.17 | 0.04 | 0.02
+AUD/CAD pair (Kalman + Johansen variants),2009,kalman entry=2.0 exit=0.0 | kalman entry=1.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.35 | 0.15 | 0.14
+AUD/CAD pair (Kalman + Johansen variants),2010,kalman entry=2.0 exit=0.0 | kalman entry=1.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.42 | 0.23 | 0.19
+AUD/CAD pair (Kalman + Johansen variants),2011,kalman entry=2.0 exit=0.0 | kalman entry=1.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.38 | 0.23 | 0.17
+AUD/CAD pair (Kalman + Johansen variants),2012,kalman entry=2.0 exit=0.0 | kalman entry=1.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.39 | 0.24 | 0.20
+AUD/CAD pair (Kalman + Johansen variants),2013,kalman entry=2.0 exit=0.0 | kalman entry=1.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.37 | 0.23 | 0.20
+AUD/CAD pair (Kalman + Johansen variants),2014,kalman entry=2.0 exit=0.0 | kalman entry=1.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.33 | 0.23 | 0.18
+AUD/CAD pair (Kalman + Johansen variants),2015,kalman entry=2.0 exit=0.0 | kalman entry=1.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.35 | 0.23 | 0.19
+AUD/CAD pair (Kalman + Johansen variants),2016,kalman entry=2.0 exit=0.0 | kalman entry=1.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.36 | 0.26 | 0.20
+AUD/CAD pair (Kalman + Johansen variants),2017,kalman entry=2.0 exit=0.0 | kalman entry=1.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.33 | 0.26 | 0.17
+AUD/CAD pair (Kalman + Johansen variants),2018,kalman entry=2.0 exit=0.0 | kalman entry=1.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.33 | 0.26 | 0.17
+AUD/CAD pair (Kalman + Johansen variants),2019,kalman entry=2.0 exit=0.0 | kalman entry=1.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.32 | 0.25 | 0.16
+AUD/CAD pair (Kalman + Johansen variants),2020,kalman entry=2.0 exit=0.0 | kalman entry=1.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.33 | 0.25 | 0.16
+AUD/CAD pair (Kalman + Johansen variants),2021,kalman entry=2.0 exit=0.0 | kalman entry=1.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.30 | 0.25 | 0.12
+AUD/CAD pair (Kalman + Johansen variants),2022,kalman entry=2.0 exit=0.0 | kalman entry=1.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.30 | 0.26 | 0.12
+AUD/CAD pair (Kalman + Johansen variants),2023,kalman entry=2.0 exit=0.0 | kalman entry=1.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.30 | 0.29 | 0.12
+AUD/CAD pair (Kalman + Johansen variants),2024,kalman entry=1.0 exit=0.0 | kalman entry=2.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.29 | 0.29 | 0.12
+AUD/CAD pair (Kalman + Johansen variants),2025,kalman entry=1.0 exit=0.0 | kalman entry=2.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.30 | 0.29 | 0.12
+AUD/CAD pair (Kalman + Johansen variants),2026,kalman entry=2.0 exit=0.0 | kalman entry=1.0 exit=0.0 | kalman entry=2.5 exit=0.5,0.28 | 0.27 | 0.11
+SPY opening gap (follow / fade),2004,entry_z=1.0 fade | entry_z=0.75 fade | entry_z=0.1 fade,0.84 | 0.73 | 0.68
+SPY opening gap (follow / fade),2005,entry_z=1.0 fade | entry_z=0.1 fade | entry_z=0.75 fade,0.75 | 0.66 | 0.62
+SPY opening gap (follow / fade),2006,entry_z=1.0 fade | entry_z=0.1 fade | entry_z=0.75 fade,0.72 | 0.65 | 0.60
+SPY opening gap (follow / fade),2007,entry_z=1.0 fade | entry_z=0.75 fade | entry_z=0.5 fade,0.67 | 0.56 | 0.55
+SPY opening gap (follow / fade),2008,entry_z=1.0 fade | entry_z=0.5 fade | entry_z=0.75 fade,0.52 | 0.46 | 0.41
+SPY opening gap (follow / fade),2009,entry_z=1.0 fade | entry_z=0.5 fade | entry_z=0.75 fade,0.71 | 0.66 | 0.56
+SPY opening gap (follow / fade),2010,entry_z=1.0 fade | entry_z=0.75 fade | entry_z=0.5 fade,0.70 | 0.49 | 0.45
+SPY opening gap (follow / fade),2011,entry_z=1.0 fade | entry_z=0.75 fade | entry_z=0.5 fade,0.75 | 0.48 | 0.36
+SPY opening gap (follow / fade),2012,entry_z=1.0 fade | entry_z=0.75 fade | entry_z=0.5 fade,0.70 | 0.42 | 0.26
+SPY opening gap (follow / fade),2013,entry_z=1.0 fade | entry_z=0.75 fade | entry_z=0.5 fade,0.67 | 0.41 | 0.23
+SPY opening gap (follow / fade),2014,entry_z=1.0 fade | entry_z=0.75 fade | entry_z=0.5 fade,0.61 | 0.34 | 0.21
+SPY opening gap (follow / fade),2015,entry_z=1.0 fade | entry_z=0.75 fade | entry_z=0.5 fade,0.60 | 0.33 | 0.18
+SPY opening gap (follow / fade),2016,entry_z=1.0 fade | entry_z=0.75 fade | entry_z=0.5 fade,0.52 | 0.24 | 0.06
+SPY opening gap (follow / fade),2017,entry_z=1.0 fade | entry_z=0.75 fade | entry_z=0.5 fade,0.49 | 0.17 | 0.04
+SPY opening gap (follow / fade),2018,entry_z=1.0 fade | entry_z=0.75 fade | entry_z=0.5 fade,0.45 | 0.16 | 0.05
+SPY opening gap (follow / fade),2019,entry_z=1.0 fade | entry_z=0.75 fade | entry_z=0.5 fade,0.45 | 0.16 | 0.00
+SPY opening gap (follow / fade),2020,entry_z=1.0 fade | entry_z=0.75 fade | entry_z=0.5 fade,0.42 | 0.13 | -0.04
+SPY opening gap (follow / fade),2021,entry_z=1.0 fade | entry_z=0.75 fade | entry_z=0.25 follow,0.37 | 0.11 | 0.01
+SPY opening gap (follow / fade),2022,entry_z=1.0 fade | entry_z=0.75 fade | entry_z=0.25 follow,0.36 | 0.05 | 0.02
+SPY opening gap (follow / fade),2023,entry_z=1.0 fade | entry_z=0.75 fade | entry_z=0.5 follow,0.40 | 0.11 | -0.03
+SPY opening gap (follow / fade),2024,entry_z=1.0 fade | entry_z=0.75 fade | entry_z=0.5 follow,0.38 | 0.08 | -0.02
+SPY opening gap (follow / fade),2025,entry_z=1.0 fade | entry_z=0.75 fade | entry_z=0.5 follow,0.37 | 0.10 | -0.03
+SPY opening gap (follow / fade),2026,entry_z=1.0 fade | entry_z=0.75 fade | entry_z=0.5 fade,0.37 | 0.13 | -0.06

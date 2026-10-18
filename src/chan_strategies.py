@@ -20,6 +20,7 @@ Every function returns a DataFrame with columns:
 """
 import numpy as np
 import pandas as pd
+from numba import njit
 from statsmodels.tsa.vector_ar.vecm import coint_johansen
 
 IS_END = "2012-12-31"  # the book went to press in 2013: everything after is out-of-sample
@@ -112,27 +113,33 @@ def pair_johansen_linear(prices: pd.DataFrame, lookback_hr: int = 250,
 # Ch.3 Example 3.3: Kalman-filter dynamic hedge ratio, Bollinger-style entries
 # ---------------------------------------------------------------------------
 
+@njit(cache=True)
+def _kalman_core(X, Y, delta, ve):
+    n = len(Y)
+    vw = delta / (1 - delta) * np.eye(2)
+    beta = np.zeros((n, 2))
+    P = np.zeros((2, 2))
+    e = np.empty(n)
+    Q = np.empty(n)
+    b = np.zeros(2)
+    for t in range(n):
+        R = P + vw
+        xt = X[t]
+        Q[t] = xt @ R @ xt + ve
+        e[t] = Y[t] - xt @ b
+        K = R @ xt / Q[t]
+        b = b + K * e[t]
+        P = R - np.outer(K, xt) @ R
+        beta[t] = b
+    return e, Q, beta
+
+
 def kalman_hedge(y: pd.Series, x: pd.Series, delta: float = 1e-4, ve: float = 1e-3):
     """Chan's Kalman regression y = beta0*x + beta1 (Ex.3.3). Returns the
     one-step-ahead forecast error e(t), its variance Q(t) and beta(t)."""
     n = len(y)
-    X = np.column_stack([x.values, np.ones(n)])
-    Y = y.values
-    vw = delta / (1 - delta) * np.eye(2)
-    beta = np.zeros((n, 2))
-    P = np.zeros((2, 2))
-    e = np.full(n, np.nan)
-    Q = np.full(n, np.nan)
-    b = np.zeros(2)
-    for t in range(n):
-        R = P + vw
-        yhat = X[t] @ b
-        Q[t] = X[t] @ R @ X[t] + ve
-        e[t] = Y[t] - yhat
-        K = R @ X[t] / Q[t]
-        b = b + K * e[t]
-        P = R - np.outer(K, X[t]) @ R
-        beta[t] = b
+    X = np.column_stack([x.values.astype(float), np.ones(n)])
+    e, Q, beta = _kalman_core(X, y.values.astype(float), float(delta), float(ve))
     idx = y.index
     return (pd.Series(e, idx), pd.Series(Q, idx),
             pd.DataFrame(beta, idx, ["slope", "intercept"]))
@@ -160,10 +167,31 @@ def kalman_mle(y: pd.Series, x: pd.Series) -> tuple:
     return best
 
 
+@njit(cache=True)
+def _band_positions(z, entry, exit_, warmup):
+    """Enter long when z < -entry, hold until z > -exit_; mirror for shorts."""
+    pos = np.zeros(len(z))
+    p = 0.0
+    for t in range(warmup, len(z)):
+        if p == 0.0:
+            if z[t] < -entry:
+                p = 1.0
+            elif z[t] > entry:
+                p = -1.0
+        elif p > 0 and z[t] > -exit_:
+            p = 0.0
+        elif p < 0 and z[t] < exit_:
+            p = 0.0
+        pos[t] = p
+    return pos
+
+
 def pair_kalman(y: pd.Series, x: pd.Series, cost: float = 0.0001,
-                warmup: int = 250, lag: int = 1) -> pd.DataFrame:
-    """Ex.3.3 trading rules: long the spread when e < -sqrt(Q), exit when
-    e > -sqrt(Q); mirror for shorts. Position in y = +units, in x = -slope*units.
+                warmup: int = 250, lag: int = 1, entry: float = 1.0,
+                exit_: float = None) -> pd.DataFrame:
+    """Ex.3.3 trading rules: long the spread when e < -entry*sqrt(Q), exit when
+    e > -exit_*sqrt(Q); mirror for shorts. Book default: entry = exit_ = 1.
+    Position in y = +units, in x = -slope*units.
 
     The filter's noise parameters (delta, Ve) are fitted by maximum
     likelihood on the IN-SAMPLE window only (see kalman_mle)."""
@@ -171,20 +199,9 @@ def pair_kalman(y: pd.Series, x: pd.Series, cost: float = 0.0001,
     ins = df.loc[:IS_END]
     delta, ve = kalman_mle(ins["y"].rename(y.name), ins["x"].rename(x.name))
     e, Q, beta = kalman_hedge(df["y"], df["x"], delta=delta, ve=ve)
-    sq = np.sqrt(Q)
-    units = pd.Series(0.0, index=df.index)
-    pos = 0.0
-    for t in range(warmup, len(df)):
-        if pos == 0:
-            if e.iloc[t] < -sq.iloc[t]:
-                pos = 1.0
-            elif e.iloc[t] > sq.iloc[t]:
-                pos = -1.0
-        elif pos > 0 and e.iloc[t] > -sq.iloc[t]:
-            pos = 0.0
-        elif pos < 0 and e.iloc[t] < sq.iloc[t]:
-            pos = 0.0
-        units.iloc[t] = pos
+    z = (e / np.sqrt(Q)).values
+    exit_ = entry if exit_ is None else exit_
+    units = pd.Series(_band_positions(z, float(entry), float(exit_), warmup), index=df.index)
     dollars = pd.DataFrame({"y": units * df["y"], "x": -units * beta["slope"] * df["x"]})
     gmv = dollars.abs().sum(axis=1).replace(0, np.nan)
     weights = dollars.div(gmv, axis=0).fillna(0.0)
@@ -198,19 +215,29 @@ def pair_kalman(y: pd.Series, x: pd.Series, cost: float = 0.0001,
 # Ch.4 / Khandani-Lo: cross-sectional short-term mean reversion
 # ---------------------------------------------------------------------------
 
-def xs_reversal(prices: pd.DataFrame, cost: float = 0.0001, lag: int = 1) -> pd.DataFrame:
+def xs_reversal(prices: pd.DataFrame, cost: float = 0.0001, lag: int = 1,
+                horizon: int = 1, smooth_hl: float = 0) -> pd.DataFrame:
     """Chan Ex.4.3 (Khandani & Lo 2007): w_i = -(r_i - mean(r)) / sum|r_i - mean(r)|,
-    rebalanced daily, held one day. Dollar-neutral, gross exposure 1."""
+    rebalanced daily, held one day. Dollar-neutral, gross exposure 1.
+    Book default: horizon=1, smooth_hl=0. Tuning knobs: `horizon` = days of
+    return the signal reverses; `smooth_hl` = EWMA half-life (days) applied to
+    the target weights to cut turnover."""
     r = prices.pct_change()
-    dev = r.sub(r.mean(axis=1), axis=0)
+    rh = prices / prices.shift(horizon) - 1
+    dev = rh.sub(rh.mean(axis=1), axis=0)
     w = -dev.div(dev.abs().sum(axis=1).replace(0, np.nan), axis=0).fillna(0.0)
-    w = w.where(r.notna(), 0.0)
+    w = w.where(rh.notna(), 0.0)
+    if smooth_hl > 0:
+        w = w.ewm(halflife=smooth_hl).mean()
     return _pack(w, r, cost, lag)
 
 
-def _hold_monthly(raw: pd.DataFrame) -> pd.DataFrame:
-    """Keep only month-end weights and hold them until the next month end."""
-    is_me = pd.Series(raw.index.to_period("M"), index=raw.index)
+def _hold_monthly(raw: pd.DataFrame, freq: str = "M") -> pd.DataFrame:
+    """Keep only period-end weights and hold them until the next period end.
+    freq: "M" month, "W" week, "D" daily (no holding)."""
+    if freq == "D":
+        return raw.fillna(0.0)
+    is_me = pd.Series(raw.index.to_period(freq), index=raw.index)
     is_me = is_me.ne(is_me.shift(-1))
     held = raw.copy()
     held.loc[~is_me.values] = np.nan
@@ -221,26 +248,37 @@ def _hold_monthly(raw: pd.DataFrame) -> pd.DataFrame:
 # Ch.6: interday momentum
 # ---------------------------------------------------------------------------
 
-def tsmom(prices: pd.DataFrame, lookback: int = 252, vol_lb: int = 63,
-          target_vol: float = 0.40, costs=0.0001, rebalance: str = "ME") -> pd.DataFrame:
+def tsmom(prices: pd.DataFrame, lookback=252, vol_lb: int = 63,
+          target_vol: float = 0.40, costs=0.0001, rebalance: str = "M",
+          signal: str = "sign") -> pd.DataFrame:
     """Time-series momentum (Ch.6, after Moskowitz-Ooi-Pedersen 2012): long if
     trailing 12m return > 0 else short; each asset scaled to target_vol / N
-    using 63-day realised vol; weights refreshed at month end only."""
+    using 63-day realised vol; weights refreshed at month end only.
+    Tuning knobs: `lookback` may be a tuple (equal-weight blend of horizons);
+    signal="cont" uses tanh(return / (vol * sqrt(horizon))) instead of sign;
+    rebalance in {"M", "W", "D"}."""
     r = prices.pct_change()
-    sig = np.sign(prices / prices.shift(lookback) - 1)
-    vol = r.rolling(vol_lb).std() * np.sqrt(252)
+    lbs = lookback if isinstance(lookback, tuple) else (lookback,)
+    dvol = r.rolling(vol_lb).std()
+    sig = 0
+    for lb in lbs:
+        ret = prices / prices.shift(lb) - 1
+        sig = sig + (np.sign(ret) if signal == "sign" else np.tanh(ret / (dvol * np.sqrt(lb))))
+    sig = sig / len(lbs)
+    vol = dvol * np.sqrt(252)
     n_live = sig.notna().sum(axis=1).replace(0, np.nan)
     raw = sig * (target_vol / vol)
     raw = raw.clip(-3, 3).div(n_live, axis=0)
-    w = _hold_monthly(raw).where(prices.notna(), 0.0)
+    w = _hold_monthly(raw, rebalance).where(prices.notna(), 0.0)
     return _pack(w, r, costs)
 
 
 def xs_momentum(prices: pd.DataFrame, lookback: int = 63, n_side: int = 3,
-                cost: float = 0.0001) -> pd.DataFrame:
+                cost: float = 0.0001, skip: int = 0) -> pd.DataFrame:
     """Cross-sectional momentum (Ch.6): rank trailing 3m returns monthly,
-    long the top n, short the bottom n, equal weight, gross 1."""
-    ret_lb = prices / prices.shift(lookback) - 1
+    long the top n, short the bottom n, equal weight, gross 1.
+    `skip` = most recent days excluded from the ranking return."""
+    ret_lb = prices.shift(skip) / prices.shift(lookback) - 1
     rank = ret_lb.rank(axis=1)
     cnt = ret_lb.notna().sum(axis=1)
     long_ = rank.gt(cnt - n_side, axis=0)
@@ -278,13 +316,15 @@ def buy_on_gap(ohlc: pd.DataFrame, entry_z: float = 1.0, ma_lb: int = 20,
     return pd.DataFrame({"gross": gross, "cost": cost_s, "net": gross - cost_s, "expo": pos})
 
 
-def gap_momentum(ohlc: pd.DataFrame, entry_z: float = 0.1, cost: float = 0.0001) -> pd.DataFrame:
+def gap_momentum(ohlc: pd.DataFrame, entry_z: float = 0.1, cost: float = 0.0001,
+                 direction: float = 1.0) -> pd.DataFrame:
     """Chan Ex.7.1 (FSTX opening-gap momentum), applied to SPY: long at the open
     if open > prev_high * (1 + 0.1 sd), short if open < prev_low * (1 - 0.1 sd);
     exit at the close."""
     sd, prev_low, prev_high, intraday = _gap_frame(ohlc)
     o = ohlc["open"]
     pos = (o > prev_high * (1 + entry_z * sd)).astype(float) - (o < prev_low * (1 - entry_z * sd)).astype(float)
+    pos = direction * pos  # -1 = fade the gap instead of following it
     gross = pos * intraday
     cost_s = pos.abs() * 2 * cost
     return pd.DataFrame({"gross": gross, "cost": cost_s, "net": gross - cost_s, "expo": pos.abs()})

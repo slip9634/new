@@ -1,0 +1,7 @@
+family,n_trials,book_default,book_default_oos_sharpe,is_best_params,is_best_is_sharpe,is_best_oos_sharpe,walkforward_oos_sharpe,wf_2013_19,wf_2020_now,hindsight_best_params,hindsight_best_oos_sharpe,hindsight_deflated_sr_prob,median_trial_oos_sharpe,frac_trials_oos_positive
+TSMOM (FX+SPY+energy),48,lb=252 sig=sign reb=M vol=63,0.1863,lb=63 sig=cont reb=M vol=63,0.4149,-0.1735,-0.0999,0.0116,-0.2010,lb=252 sig=cont reb=W vol=63,0.2435,0.3519,-0.0690,0.3125
+XS reversal G10 FX,40,horizon=1 smooth=0,0.0367,horizon=5 smooth=2,0.1879,0.2017,0.3913,0.3286,0.4768,horizon=10 smooth=10,0.6515,0.7458,0.4076,0.9250
+XS momentum G10 FX,22,lb=63 n=3 skip=0,-0.4719,lb=63 n=2 skip=0,0.1264,-0.4585,-0.5456,-0.5508,-0.5483,lb=252 n=2 skip=21,0.1589,0.1713,-0.2683,0.1364
+"Kalman pairs book, all 36 G10 FX pairs",7,entry=1.0 exit=1.0,-0.0490,entry=2.5 exit=0.5,-0.0662,-0.2518,-0.0645,-0.1637,0.0868,entry=1.0 exit=0.0,0.2184,0.5425,-0.0490,0.2857
+AUD/CAD pair (Kalman + Johansen variants),9,kalman entry=1.0 exit=1.0,-0.0063,kalman entry=2.0 exit=0.0,0.3741,0.0284,0.2854,0.3242,0.2389,kalman entry=1.0 exit=0.0,0.4424,0.5221,-0.0063,0.4444
+SPY opening gap (follow / fade),10,entry_z=0.1 follow,-0.0478,entry_z=1.0 fade,0.6659,0.0430,-0.3905,-0.6353,-0.1415,entry_z=0.5 follow,0.1419,0.2984,-0.0836,0.4000
