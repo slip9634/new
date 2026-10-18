@@ -1,0 +1,5 @@
+pair,period,start,end,johansen_trace,crit_95,cointegrated_95,half_life_days
+AUD/CAD,IS (book era),1990-01-02,2012-12-31,8.97,15.49,False,210.9
+AUD/CAD,OOS 2013-now,2013-01-02,2026-10-09,23.83,15.49,True,120.3
+BRENT/WTI,IS (book era),1990-01-02,2012-12-31,26.04,15.49,True,28.3
+BRENT/WTI,OOS 2013-now,2013-01-02,2026-10-14,59.97,15.49,True,11.1
